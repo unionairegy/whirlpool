@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مركز صيانة ويرلبول Whirlpool | القاهرة والجيزة</title>
-  <meta name="description" content="دليل محلي لخدمات صيانة وتصليح أجهزة ويرلبول Whirlpool في القاهرة والجيزة: غسالات، ثلاجات، ديب فريزر، مجففات، وغسالات أطباق مع إمكانية حجز صيانة سريعة.">
+  <meta name="description" content="خدمات تصليح أجهزة ويرلبول Whirlpool في القاهرة والجيزة: غسالات، ثلاجات، ديب فريزر، مجففات، غسالات أطباق. اطلب زيارة وفحص فني منزلي فوري.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <meta name="theme-color" content="#0d355f">
+  <meta name="theme-color" content="#082844">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_EG">
@@ -19,6 +19,7 @@
       --navy2:#082844;
       --blue:#1769aa;
       --gold:#f5b63b;
+      --gold-hover:#e09f24;
       --bg:#f4f7fb;
       --card:#fff;
       --text:#182235;
@@ -44,7 +45,8 @@
     .brand small{display:block;color:var(--muted);font-weight:600;font-size:12px}
     nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
     nav a{font-size:14px;font-weight:800;color:#2d3b50}
-    .nav-btn{background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-weight:800}
+    .nav-btn{background:linear-gradient(135deg,var(--gold),var(--gold-hover));color:#082844;padding:10px 22px;border-radius:999px;font-weight:900;box-shadow:0 4px 15px rgba(245,182,59,.3);transition:.2s}
+    .nav-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(245,182,59,.45)}
 
     .hero{padding:72px 0 50px;background:radial-gradient(circle at 12% 15%,rgba(23,105,170,.12),transparent 28%),linear-gradient(135deg,#fff,#edf4fb);border-bottom:1px solid var(--line)}
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
@@ -52,9 +54,9 @@
     h1{font-size:clamp(32px,4.5vw,52px);line-height:1.25;margin:0 0 16px;color:var(--navy2)}
     .lead{font-size:19px;color:#46556c;margin:0 0 24px;max-width:760px}
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 22px;border-radius:14px;font-weight:900;transition:.2s ease;cursor:pointer;border:none}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border-radius:14px;font-weight:900;transition:.2s ease;cursor:pointer;border:none}
     .btn:hover{transform:translateY(-2px)}
-    .btn-primary{background:var(--navy);color:#fff}
+    .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-hover));color:#082844;box-shadow:0 8px 24px rgba(245,182,59,.35)}
     .btn-outline{background:#fff;border:2px solid var(--navy);color:var(--navy)}
 
     .hero-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
@@ -82,6 +84,63 @@
     .feature b{display:block;margin-top:7px;font-size:17px}
     .feature span{color:#d5dfeb;font-size:14px}
 
+    /* سيكشن الحجز الجديد والفورم المبتكرة والبارزة */
+    .cta-wrapper{
+      position:relative;
+      background:radial-gradient(circle at 10% 20%, #153c66 0%, #082844 80%);
+      border-radius:32px;
+      padding:56px 44px;
+      color:#fff;
+      box-shadow:0 24px 60px rgba(8,40,68,.3);
+      border:1px solid rgba(255,255,255,.12);
+      overflow:hidden;
+    }
+    .cta-wrapper::before{
+      content:'';
+      position:absolute;
+      top:-80px;
+      left:-80px;
+      width:300px;
+      height:300px;
+      background:radial-gradient(circle, rgba(245,182,59,.18), transparent 70%);
+      pointer-events:none;
+    }
+    .cta-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:44px;align-items:center;position:relative;z-index:2}
+    .cta-info h2{font-size:clamp(30px,3.8vw,44px);line-height:1.25;margin:0 0 16px;color:#fff}
+    .cta-info p{font-size:18px;color:#d5e4f3;margin:0 0 24px}
+    .cta-highlights{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+    .cta-highlights li{display:flex;align-items:center;gap:10px;font-size:15px;color:#f0f5fa;font-weight:700}
+    .cta-highlights span{width:26px;height:26px;border-radius:50%;background:rgba(245,182,59,.2);color:var(--gold);display:grid;place-items:center;font-size:14px}
+
+    .form-card{
+      background:#ffffff;
+      border-radius:24px;
+      padding:34px 28px;
+      box-shadow:0 20px 48px rgba(0,0,0,.25), 0 0 0 4px rgba(245,182,59,.4);
+      color:var(--text);
+    }
+    .form-head{margin-bottom:20px;text-align:center}
+    .form-head h3{margin:0 0 6px;font-size:22px;color:var(--navy2);font-weight:900}
+    .form-head span{font-size:13px;color:var(--muted);display:block}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form-group{margin-bottom:14px}
+    .form-group label{display:block;font-size:13px;font-weight:800;color:#2c3e55;margin-bottom:6px}
+    .form-group input, .form-group select, .form-group textarea{
+      width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid #d4e0ec;
+      background:#f8fafc;color:#182235;font-family:inherit;font-size:14px;transition:.2s ease;outline:none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus{
+      border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(23,105,170,.12);
+    }
+    .form-group textarea{resize:vertical;min-height:75px}
+    .btn-submit-booking{
+      background:linear-gradient(135deg,var(--gold),var(--gold-hover));
+      color:#082844;width:100%;font-weight:900;font-size:17px;border:none;
+      padding:15px;border-radius:14px;cursor:pointer;transition:.2s;
+      box-shadow:0 8px 22px rgba(245,182,59,.4);
+    }
+    .btn-submit-booking:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(245,182,59,.55)}
+
     .location-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;align-items:start}
     .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
     .panel h2{margin:0 0 16px;color:var(--navy2)}
@@ -92,46 +151,42 @@
     .map-box{padding:8px;background:#fff;border:1px solid var(--line);border-radius:18px}
     iframe{display:block;width:100%;height:460px;border:0;border-radius:14px}
 
-    .areas{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-    .area{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px;text-align:center;font-weight:800;color:var(--navy)}
+    .areas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .area-badge{
+      background:#fff;border:1px solid var(--line);border-radius:14px;
+      padding:14px 12px;text-align:center;font-weight:800;color:var(--navy);
+      font-size:14px;box-shadow:0 4px 12px rgba(13,53,95,.03);transition:.2s;
+    }
+    .area-badge:hover{border-color:var(--blue);transform:translateY(-2px)}
 
     .faq{display:grid;gap:12px;max-width:900px;margin:auto}
     details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px 18px}
     summary{cursor:pointer;font-weight:900;color:var(--navy2)}
     details p{margin:10px 0 0;color:var(--muted)}
 
-    .booking-section{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:26px;padding:36px;box-shadow:var(--shadow)}
-    .booking-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}
-    .form-group{margin-bottom:14px}
-    .form-group label{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
-    .form-group input, .form-group select, .form-group textarea{
-      width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.3);
-      background:rgba(255,255,255,.95);color:#182235;font-family:inherit;font-size:14px;
-    }
-    .form-group textarea{resize:vertical;min-height:80px}
-    .btn-submit{background:var(--gold);color:#082844;width:100%;font-weight:900;font-size:16px;border:none}
-    .btn-submit:hover{background:#e5a72f}
-
     footer{margin-top:48px;background:#0a2947;color:#d8e3ef;padding:28px 0}
     footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
     @media(max-width:960px){
-      .hero-grid,.location-grid,.booking-grid{grid-template-columns:1fr}
+      .hero-grid,.location-grid,.cta-grid{grid-template-columns:1fr}
       .services{grid-template-columns:repeat(2,1fr)}
       .features-grid{grid-template-columns:repeat(2,1fr)}
-      .areas{grid-template-columns:repeat(2,1fr)}
+      .areas-grid{grid-template-columns:repeat(3,1fr)}
       nav{display:none}
+      .form-row{grid-template-columns:1fr}
     }
     @media(max-width:620px){
       .device-wall{grid-template-columns:repeat(2,1fr)}
-      .services,.features-grid,.areas{grid-template-columns:1fr}
+      .services,.features-grid{grid-template-columns:1fr}
+      .areas-grid{grid-template-columns:repeat(2,1fr)}
       iframe{height:360px}
       .hero{padding-top:42px}
-      .booking-section{padding:22px}
+      .cta-wrapper{padding:32px 18px}
+      .form-card{padding:24px 16px}
     }
   </style>
 
-  <!-- LocalBusiness Schema المربوط بـ CID الخريطة -->
+  <!-- LocalBusiness Schema المربوط بـ CID الخريطة الجديد -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -156,11 +211,9 @@
       "longitude": 31.3580033
     },
     "areaServed": [
-      { "@type": "City", "name": "القاهرة" },
-      { "@type": "City", "name": "الجيزة" },
       { "@type": "City", "name": "مدينة نصر" },
-      { "@type": "City", "name": "مصر الجديدة" },
-      { "@type": "City", "name": "التجمع" }
+      { "@type": "City", "name": "القاهرة" },
+      { "@type": "City", "name": "الجيزة" }
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -182,7 +235,7 @@
   <div class="topbar">
     <div class="container">
       <span>خدمات تصليح أجهزة ويرلبول في محافظتي القاهرة والجيزة</span>
-      <a href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener"><strong>📍 موقع المركز على الخريطة</strong></a>
+      <a href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener"><strong>📍 موقع المركز المعتمد على خريطة جوجل</strong></a>
     </div>
   </div>
 
@@ -194,10 +247,12 @@
       </a>
       <nav>
         <a href="#services">الأجهزة المدعومة</a>
-        <a href="#booking">طلب فحص منزلي</a>
+        <a href="#booking-form">طلب فحص منزلي</a>
         <a href="#location">الموقع والاتجاهات</a>
+        <a href="#areas">مناطق التغطية</a>
         <a href="#faq">الأسئلة الشائعة</a>
-        <a class="nav-btn" href="#booking">حجز موعد فحص</a>
+        <!-- ربط زر الهيدر بالفورم مباشرة -->
+        <a class="nav-btn" href="#booking-form">حجز موعد فحص</a>
       </nav>
     </div>
   </header>
@@ -210,7 +265,8 @@
           <h1>مركز صيانة ويرلبول Whirlpool</h1>
           <p class="lead">خدمة منزلية متخصصة لفحص وتصليح كافة موديلات أجهزة ويرلبول الحديثة والقديمة في جميع أحياء القاهرة والجيزة مع دعم فني ميداني سريع.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">📝 طلب زيارة فنية وفحص منزلي</a>
+            <!-- ربط زر الهيرو الأساسي بالفورم مباشرة -->
+            <a class="btn btn-gold" href="#booking-form">📝 طلب زيارة وفحص فني</a>
             <a class="btn btn-outline" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ الاتجاهات على الخريطة</a>
           </div>
         </div>
@@ -260,41 +316,51 @@
       </div>
     </section>
 
-    <!-- سيكشن الكول تو أكشن ونموذج الإرسال المباشر -->
-    <section id="booking">
+    <!-- سيكشن الكول تو أكشن والفورم الجديد بالكامل -->
+    <section id="booking-form">
       <div class="container">
-        <div class="booking-section">
-          <div class="booking-grid">
-            <div>
-              <h2 style="margin:0 0 10px;font-size:30px;">طلب فحص وصيانة منزلية</h2>
-              <p style="margin:0 0 18px;color:#dbe8f5;">سجل بيانات الجهاز وموقعك، وسيتم تحويل الطلب فوراً إلى الفريق الفني لمعاينة الحالة وتحديد الموعد المناسب للزيارة.</p>
-              <ul style="padding-right:20px;line-height:2;color:#e8f1fa;font-size:15px;margin:0;">
-                <li>فحص منزلي دقيق لتشخيص الأعطال.</li>
-                <li>تغطية كافة مناطق القاهرة والجيزة.</li>
-                <li>توفير المكونات والقطع التالفة مباشرة.</li>
+        <div class="cta-wrapper">
+          <div class="cta-grid">
+            <div class="cta-info">
+              <h2>احجز موعد فحص منزلي لجهازك الآن</h2>
+              <p>سجل بيانات الجهاز وموقعك هنا لتحديد موعد الزيارة الفنية في أسرع وقت. تصلك الخدمة حتى باب منزلك في القاهرة والجيزة.</p>
+              
+              <ul class="cta-highlights">
+                <li><span>✓</span> فحص ميداني شامل وتشخيص دقيق للعطل داخل المنزل.</li>
+                <li><span>✓</span> تغطية سريعة ومباشرة لكافة أحياء مدينة نصر والقاهرة والجيزة.</li>
+                <li><span>✓</span> توفير المكونات البديلة المخصصة لنوع وموديل جهازك.</li>
+                <li><span>✓</span> ضمان فني على عمليات الإصلاح والأجزاء المستبدلة.</li>
               </ul>
             </div>
 
-            <div>
-              <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST" style="background:#fff;padding:24px;border-radius:18px;color:#182235;">
-                <!-- إعدادات نموذج الإرسال -->
+            <!-- بطاقة الفورم بتصميم ملفت وبارز -->
+            <div class="form-card">
+              <div class="form-head">
+                <h3>طلب صيانة منزلية فورية</h3>
+                <span>طريقة التواصل والحجز المباشرة مع الفريق الفني</span>
+              </div>
+
+              <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="طلب صيانة ويرلبول جديد عبر الموقع">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
 
-                <div class="form-group">
-                  <label>الاسم بالكامل</label>
-                  <input type="text" name="الاسم" placeholder="اكتب اسمك الكريم" required>
-                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>الاسم بالكامل</label>
+                    <input type="text" name="الاسم" placeholder="اكتب اسم العميل" required>
+                  </div>
 
-                <div class="form-group">
-                  <label>رقم الهاتف للتواصل</label>
-                  <input type="tel" name="رقم_الهاتف" placeholder="رقم الهاتف للتنسيق" required>
+                  <div class="form-group">
+                    <label>رقم الهاتف للتواصل</label>
+                    <input type="tel" name="رقم_الهاتف" placeholder="رقم الموبايل للمتابعة" required>
+                  </div>
                 </div>
 
                 <div class="form-group">
                   <label>نوع الجهاز المطلوب صيانته</label>
                   <select name="نوع_الجهاز" required>
+                    <option value="" disabled selected>اختر نوع جهاز ويرلبول</option>
                     <option value="غسالة ملابس">غسالة ملابس ويرلبول</option>
                     <option value="ثلاجة">ثلاجة ويرلبول</option>
                     <option value="ديب فريزر">ديب فريزر ويرلبول</option>
@@ -302,21 +368,21 @@
                     <option value="غسالة أطباق">غسالة أطباق ويرلبول</option>
                     <option value="فرن أو مسطح">فرن أو مسطح ويرلبول</option>
                     <option value="ميكروويف">ميكروويف ويرلبول</option>
-                    <option value="جهاز آخر">أجهزة منزلية أخرى</option>
+                    <option value="أجهزة أخرى">أجهزة منزلية أخرى</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label>المنطقة أو الحي (القاهرة / الجيزة)</label>
-                  <input type="text" name="المنطقة_والعنوان" placeholder="مثال: مدينة نصر، المعادي، الدقي، أكتوبر..." required>
+                  <label>وصف المشكلة أو العطل</label>
+                  <textarea name="وصف_العطل" placeholder="اكتب تفاصيل العطل (مثل: ضعف تبريد، تسريب مياه، صوت عالي...)" required></textarea>
                 </div>
 
                 <div class="form-group">
-                  <label>وصف مختصر للمشكلة أو العطل</label>
-                  <textarea name="وصف_العطل" placeholder="مثال: الغسالة لا تطرد المياه، الثلاجة لا تبرد جيدا..."></textarea>
+                  <label>المنطقة أو الحي بالتفصيل</label>
+                  <input type="text" name="المنطقة_والحي" placeholder="مثال: مدينة نصر (مكرم عبيد)، الهرم، 6 أكتوبر..." required>
                 </div>
 
-                <button type="submit" class="btn btn-submit">إرسال طلب الصيانة الفوري</button>
+                <button type="submit" class="btn-submit-booking">تأكيد وإرسال طلب الفحص المنزلي</button>
               </form>
             </div>
           </div>
@@ -340,7 +406,7 @@
               <div class="nap-item"><small>التصنيف</small><strong>تصليح أجهزة منزلية</strong></div>
             </div>
             <div style="margin-top:18px;">
-              <a class="btn btn-primary" style="width:100%;" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ فتح الخريطة وطلب الاتجاهات</a>
+              <a class="btn btn-outline" style="width:100%;" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ فتح الخريطة وطلب الاتجاهات</a>
             </div>
           </div>
 
@@ -357,21 +423,32 @@
       </div>
     </section>
 
+    <!-- توسيع مناطق مدينة نصر والجيزة والقاهرة بالكامل -->
     <section id="areas">
       <div class="container">
         <div class="section-head">
           <h2>نطاق تغطية الزيارات المنزلية</h2>
-          <p>نصل إليك في أسرع وقت بجميع قطاعات القاهرة والجيزة.</p>
+          <p>نصل إليك في جميع قطاعات وأحياء القاهرة والجيزة في أسرع وقت.</p>
         </div>
-        <div class="areas">
-          <div class="area">مدينة نصر والتجمع</div>
-          <div class="area">مصر الجديدة والنزهة</div>
-          <div class="area">المعادي والمقطم</div>
-          <div class="area">الدقي والمهندسين</div>
-          <div class="area">الهرم وفيصل</div>
-          <div class="area">6 أكتوبر والشيخ زايد</div>
-          <div class="area">شبرا ووسط البلد</div>
-          <div class="area">كافة أحياء الجيزة والقاهرة</div>
+        <div class="areas-grid">
+          <!-- تفاصيل أحياء مدينة نصر -->
+          <div class="area-badge">مدينة نصر (الحي العاشر)</div>
+          <div class="area-badge">شارع مكرم عبيد</div>
+          <div class="area-badge">شارع عباس العقاد</div>
+          <div class="area-badge">الحي السابع والسفارات</div>
+          <div class="area-badge">شارع الطيران ورابعة</div>
+          <div class="area-badge">زهراء مدينة نصر</div>
+          <div class="area-badge">مساكن النادي الأهلي</div>
+          <div class="area-badge">الحي الثامن والتاسع</div>
+          <!-- أحياء القاهرة والجيزة الممتدة -->
+          <div class="area-badge">مصر الجديدة والنزهة</div>
+          <div class="area-badge">التجمع والقاهرة الجديدة</div>
+          <div class="area-badge">المعادي وزهراء المعادي</div>
+          <div class="area-badge">المقطم والهضبة الوسطى</div>
+          <div class="area-badge">الدقي والمهندسين والعجوزة</div>
+          <div class="area-badge">الهرم وفيصل ومريوطية</div>
+          <div class="area-badge">حدائق الأهرام والرماية</div>
+          <div class="area-badge">6 أكتوبر والشيخ زايد</div>
         </div>
       </div>
     </section>
@@ -386,7 +463,7 @@
           <details><summary>هل تتم أعمال الصيانة داخل المنزل أم يتطلب نقل الجهاز؟</summary><p>تتم أعمال الفحص والإصلاح بنسبة 95% داخل المنزل لتفادي أي أضرار ناجمة عن النقل، ولا يتم سحب الجهاز إلا في حالات الأعطال المعقدة التي تتطلب أجهزة اختبار معملية خاصة.</p></details>
           <details><summary>ما هي الأجهزة المشمولة في خدمات ويرلبول؟</summary><p>تشمل الخدمات فحص وتصليح غسالات الملابس، الثلاجات، الديب فريزر، مجففات الملابس (الدراير)، غسالات الأطباق، والأفران والمسطحات المدمجة.</p></details>
           <details><summary>هل يحصل العميل على ضمان بعد إتمام الصيانة؟</summary><p>نعم، يتم تقديم ضمان مكتوب على الأجزاء وقطع الغيار التي تم استبدالها وعلى عملية الإصلاح لضمان استقرار الجهاز وكفاءة تشغيله.</p></details>
-          <details><summary>ما هي المدة المتوقعة لوصول الفني بعد إرسال الطلب؟</summary><p>يتم التواصل لتأكيد الموعد فور مراجعة بيانات الطلب، وتتم الزيارة الميدانية في أغلب الأوقات خلال 24 إلى 48 ساعة كحد أقصى حسب منطقتك الجغرافية.</p></details>
+          <details><summary>ما هي المدة المتوقعة لوصول الفني بعد إرسال الطلب؟</summary><p>يتم مراجعة الطلب فور إرساله عبر النموذج، ويتم التواصل لتأكيد الزيارة الميدانية غالباً خلال 24 إلى 48 ساعة كحد أقصى حسب منطقتك الجغرافية.</p></details>
           <details><summary>هل تتوفر قطع غيار مطابقة للموديلات الأمريكية القديمة والحديثة؟</summary><p>نعم، نحرص على توفير القطع الميكانيكية والإلكترونية المناسبة لموديلات ويرلبول المختلفة لضمان التوافق التام وطول العمر الافتراضي للجهاز.</p></details>
           <details><summary>كيف يتم احتساب تكلفة الفحص والزيارة المنزلية؟</summary><p>يتم فحص الجهاز وتشخيص العطل أولاً، ثم إبلاغ العميل بتقرير الصيانة وتكلفة قطع الغيار قبل البدء بأي خطوة فعلية في التصليح.</p></details>
           <details><summary>أين يقع مقر النشاط المحدد على الخريطة؟</summary><p>الموقع مسجل بعمارات مصر للتعمير، مساكن النادي الأهلي، الحي العاشر بمدينة نصر، ويمكن الوصول للموقع وطلب الاتجاهات عبر الرابط المخصص.</p></details>
