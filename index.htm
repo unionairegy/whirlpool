@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مركز صيانة ويرلبول Whirlpool | مدينة نصر والقاهرة</title>
-  <meta name="description" content="الدليل المحلي لخدمات صيانة أجهزة ويرلبول Whirlpool في مدينة نصر والقاهرة: صيانة غسالات، ثلاجات، ديب فريزر، مجففات، وغسالات أطباق مع تفاصيل الموقع والخريطة المباشرة.">
+  <title>مركز صيانة ويرلبول Whirlpool | القاهرة والجيزة</title>
+  <meta name="description" content="دليل محلي لخدمات صيانة وتصليح أجهزة ويرلبول Whirlpool في القاهرة والجيزة: غسالات، ثلاجات، ديب فريزر، مجففات، وغسالات أطباق مع إمكانية حجز صيانة سريعة.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#0d355f">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_EG">
-  <meta property="og:title" content="مركز صيانة ويرلبول Whirlpool | مدينة نصر والقاهرة">
-  <meta property="og:description" content="الموقع الجغرافي ودليل خدمات صيانة أجهزة ويرلبول المنزلية في مدينة نصر والقاهرة.">
+  <meta property="og:title" content="مركز صيانة ويرلبول Whirlpool | القاهرة والجيزة">
+  <meta property="og:description" content="خدمات تصليح أجهزة ويرلبول المنزلية في نطاق القاهرة والجيزة بالكامل.">
 
   <style>
     :root{
@@ -44,15 +44,15 @@
     .brand small{display:block;color:var(--muted);font-weight:600;font-size:12px}
     nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
     nav a{font-size:14px;font-weight:800;color:#2d3b50}
-    .nav-map{background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-weight:800}
+    .nav-btn{background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-weight:800}
 
     .hero{padding:72px 0 50px;background:radial-gradient(circle at 12% 15%,rgba(23,105,170,.12),transparent 28%),linear-gradient(135deg,#fff,#edf4fb);border-bottom:1px solid var(--line)}
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
-    .badge{display:inline-flex;align-items:center;gap:8px;background:#e8f1fa;color:var(--navy);padding:8px 13px;border-radius:999px;font-weight:900;font-size:14px;margin-bottom:14px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:#e8f1fa;color:var(--navy);padding:8px 14px;border-radius:999px;font-weight:900;font-size:14px;margin-bottom:14px}
     h1{font-size:clamp(32px,4.5vw,52px);line-height:1.25;margin:0 0 16px;color:var(--navy2)}
     .lead{font-size:19px;color:#46556c;margin:0 0 24px;max-width:760px}
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 22px;border-radius:14px;font-weight:900;transition:.2s ease}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 22px;border-radius:14px;font-weight:900;transition:.2s ease;cursor:pointer;border:none}
     .btn:hover{transform:translateY(-2px)}
     .btn-primary{background:var(--navy);color:#fff}
     .btn-outline{background:#fff;border:2px solid var(--navy);color:var(--navy)}
@@ -90,7 +90,7 @@
     .nap-item small{display:block;color:var(--muted);margin-bottom:4px}
     .nap-item strong{font-size:15px;line-height:1.6}
     .map-box{padding:8px;background:#fff;border:1px solid var(--line);border-radius:18px}
-    iframe{display:block;width:100%;height:520px;border:0;border-radius:14px}
+    iframe{display:block;width:100%;height:460px;border:0;border-radius:14px}
 
     .areas{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
     .area{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px;text-align:center;font-weight:800;color:var(--navy)}
@@ -100,16 +100,23 @@
     summary{cursor:pointer;font-weight:900;color:var(--navy2)}
     details p{margin:10px 0 0;color:var(--muted)}
 
-    .cta{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:26px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;box-shadow:var(--shadow)}
-    .cta h2{margin:0 0 6px;font-size:28px}
-    .cta p{margin:0;color:#dfeaf5}
-    .cta .btn{background:#fff;color:var(--navy)}
+    .booking-section{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:26px;padding:36px;box-shadow:var(--shadow)}
+    .booking-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}
+    .form-group{margin-bottom:14px}
+    .form-group label{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+    .form-group input, .form-group select, .form-group textarea{
+      width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.3);
+      background:rgba(255,255,255,.95);color:#182235;font-family:inherit;font-size:14px;
+    }
+    .form-group textarea{resize:vertical;min-height:80px}
+    .btn-submit{background:var(--gold);color:#082844;width:100%;font-weight:900;font-size:16px;border:none}
+    .btn-submit:hover{background:#e5a72f}
 
     footer{margin-top:48px;background:#0a2947;color:#d8e3ef;padding:28px 0}
     footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
     @media(max-width:960px){
-      .hero-grid,.location-grid{grid-template-columns:1fr}
+      .hero-grid,.location-grid,.booking-grid{grid-template-columns:1fr}
       .services{grid-template-columns:repeat(2,1fr)}
       .features-grid{grid-template-columns:repeat(2,1fr)}
       .areas{grid-template-columns:repeat(2,1fr)}
@@ -118,12 +125,13 @@
     @media(max-width:620px){
       .device-wall{grid-template-columns:repeat(2,1fr)}
       .services,.features-grid,.areas{grid-template-columns:1fr}
-      iframe{height:390px}
+      iframe{height:360px}
       .hero{padding-top:42px}
+      .booking-section{padding:22px}
     }
   </style>
 
-  <!-- LocalBusiness Schema المربوط بـ CID الخريطة وإحداثيات الموقع الرسمي -->
+  <!-- LocalBusiness Schema المربوط بـ CID الخريطة -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -148,58 +156,22 @@
       "longitude": 31.3580033
     },
     "areaServed": [
+      { "@type": "City", "name": "القاهرة" },
+      { "@type": "City", "name": "الجيزة" },
       { "@type": "City", "name": "مدينة نصر" },
-      { "@type": "City", "name": "الحي العاشر" },
       { "@type": "City", "name": "مصر الجديدة" },
-      { "@type": "City", "name": "التجمع والخامس" },
-      { "@type": "AdministrativeArea", "name": "محافظة القاهرة" }
+      { "@type": "City", "name": "التجمع" }
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "خدمات صيانة أجهزة ويرلبول",
+      "name": "خدمات تصليح أجهزة ويرلبول",
       "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "صيانة غسالات ويرلبول"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "صيانة ثلاجات ويرلبول"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "صيانة ديب فريزر ويرلبول"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "صيانة غسالات اطباق ويرلبول"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "صيانة مجففات ويرلبول"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "تصليح اجهزة ويرلبول المنزلية"
-          }
-        }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "صيانة غسالات ويرلبول" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "صيانة ثلاجات ويرلبول" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "صيانة ديب فريزر ويرلبول" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "صيانة غسالات اطباق ويرلبول" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "صيانة مجففات ويرلبول" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "تصليح اجهزة ويرلبول المنزلية" } }
       ]
     }
   }
@@ -209,8 +181,8 @@
 
   <div class="topbar">
     <div class="container">
-      <span>دليل وخدمات صيانة أجهزة Whirlpool في مدينة نصر والقاهرة</span>
-      <a href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener"><strong>📍 الموقع المعتمد على خريطة جوجل</strong></a>
+      <span>خدمات تصليح أجهزة ويرلبول في محافظتي القاهرة والجيزة</span>
+      <a href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener"><strong>📍 موقع المركز على الخريطة</strong></a>
     </div>
   </div>
 
@@ -222,10 +194,10 @@
       </a>
       <nav>
         <a href="#services">الأجهزة المدعومة</a>
-        <a href="#location">العنوان والخريطة</a>
-        <a href="#areas">مناطق التغطية</a>
+        <a href="#booking">طلب فحص منزلي</a>
+        <a href="#location">الموقع والاتجاهات</a>
         <a href="#faq">الأسئلة الشائعة</a>
-        <a class="nav-map" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">الاتجاهات على الخريطة</a>
+        <a class="nav-btn" href="#booking">حجز موعد فحص</a>
       </nav>
     </div>
   </header>
@@ -234,21 +206,21 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="badge">📍 عمارات مصر للتعمير، مساكن النادي الأهلي، مدينة نصر</span>
+          <span class="badge">📍 صيانة ويرلبول القاهرة والجيزة تغطي خدماتنا القاهرة والجيزة بشكل كامل</span>
           <h1>مركز صيانة ويرلبول Whirlpool</h1>
-          <p class="lead">الصفحة الرسمية الداعمة لخدمات فحص وصيانة أجهزة ويرلبول المنزلية في مدينة نصر ومحافظة القاهرة، مع بيانات العنوان والإحداثيات الجغرافية الكاملة.</p>
+          <p class="lead">خدمة منزلية متخصصة لفحص وتصليح كافة موديلات أجهزة ويرلبول الحديثة والقديمة في جميع أحياء القاهرة والجيزة مع دعم فني ميداني سريع.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ فتح الموقع على خريطة جوجل</a>
-            <a class="btn btn-outline" href="#location">📌 تفاصيل العنوان المعتمد</a>
+            <a class="btn btn-primary" href="#booking">📝 طلب زيارة فنية وفحص منزلي</a>
+            <a class="btn btn-outline" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ الاتجاهات على الخريطة</a>
           </div>
         </div>
 
         <div class="hero-card">
           <div class="device-wall">
-            <div class="device-mini"><span class="ico">🧺</span><b>غسالات</b></div>
+            <div class="device-mini"><span class="ico">🧺</span><b>غسالات ملابس</b></div>
             <div class="device-mini"><span class="ico">🧊</span><b>ثلاجات</b></div>
             <div class="device-mini"><span class="ico">❄️</span><b>ديب فريزر</b></div>
-            <div class="device-mini"><span class="ico">♨️</span><b>مجففات (دراير)</b></div>
+            <div class="device-mini"><span class="ico">♨️</span><b>مجففات ملابس</b></div>
             <div class="device-mini"><span class="ico">🍽️</span><b>غسالات أطباق</b></div>
             <div class="device-mini"><span class="ico">🔥</span><b>أفران ومسطحات</b></div>
             <div class="device-mini"><span class="ico">📡</span><b>ميكروويف</b></div>
@@ -262,29 +234,93 @@
     <section id="services">
       <div class="container">
         <div class="section-head">
-          <h2>خدمات أجهزة ويرلبول الميدانية</h2>
-          <p>تغطية فنية متكاملة ومطابقة لقائمة الخدمات المسجلة للنشاط.</p>
+          <h2>خدمات تصليح أجهزة ويرلبول</h2>
+          <p>تغطية شاملة لكافة الأجهزة المنزلية بإشراف فني متخصص.</p>
         </div>
 
         <div class="services">
-          <article class="service"><div class="icon">🧺</div><h3>صيانة غسالات ويرلبول</h3><p>فحص الأعطال الميكانيكية، تصريف المياه، عدم العصر، وبرمجة كروت التحكم الأصلية.</p></article>
-          <article class="service"><div class="icon">🧊</div><h3>صيانة ثلاجات ويرلبول</h3><p>معالجة ضعف التبريد، شحن الغاز، إصلاح الثرموستات، ومشاكل ثلاجات السايد باي سايد.</p></article>
-          <article class="service"><div class="icon">❄️</div><h3>صيانة ديب فريزر ويرلبول</h3><p>صيانة الديب فريزر الرأسي والأفقي ومعالجة تراكم الثلج والأعطال الكهربائية.</p></article>
+          <article class="service"><div class="icon">🧺</div><h3>صيانة غسالات ويرلبول</h3><p>فحص الأعطال الميكانيكية، تصريف المياه، مشاكل عدم العصر، وبرمجة كروت التحكم.</p></article>
+          <article class="service"><div class="icon">🧊</div><h3>صيانة ثلاجات ويرلبول</h3><p>معالجة ضعف التبريد، شحن الغاز، إصلاح الثرموستات، ومشاكل الثلاجات السايد باي سايد.</p></article>
+          <article class="service"><div class="icon">❄️</div><h3>صيانة ديب فريزر ويرلبول</h3><p>صيانة الديب فريزر الرأسي والأفقي ومعالجة تراكم الثلج ومشاكل الموتور والتايمر.</p></article>
           <article class="service"><div class="icon">♨️</div><h3>صيانة مجففات ويرلبول</h3><p>إصلاح السخانات، كفاءة التجفيف، وتغيير السيور والمحركات لجميع مجففات الملابس.</p></article>
-          <article class="service"><div class="icon">🍽️</div><h3>صيانة غسالات أطباق ويرلبول</h3><p>معالجة مشاكل طرد وسحب المياه، تنظيف الرشاشات، ودورات التعقيم والغسيل.</p></article>
-          <article class="service"><div class="icon">🔥</div><h3>صيانة أفران ومسطحات ويرلبول</h3><p>ضبط الإشعال الذاتي، توزيع الحرارة، وتأمين صمامات الأمان للأفران والمسطحات.</p></article>
+          <article class="service"><div class="icon">🍽️</div><h3>صيانة غسالات أطباق ويرلبول</h3><p>معالجة مشاكل طرد وسحب المياه، تنظيف الرشاشات، وضبط دورات التعقيم والغسيل.</p></article>
+          <article class="service"><div class="icon">🔥</div><h3>صيانة أفران ومسطحات ويرلبول</h3><p>ضبط الإشعال الذاتي، توزيع الحرارة المتساوي، وتأمين صمامات الأمان للأفران.</p></article>
           <article class="service"><div class="icon">📡</div><h3>صيانة ميكروويف ويرلبول</h3><p>فحص وحدة الماجناترون، لوحات اللمس، وصواني الدوران لأنظمة الميكروويف والشوايات.</p></article>
-          <article class="service"><div class="icon">🛠️</div><h3>تصليح أجهزة ويرلبول المنزلية</h3><p>صيانة شاملة للأجهزة المدمجة والشفاطات المنزلية بقطع غيار مخصصة للماركة.</p></article>
+          <article class="service"><div class="icon">🛠️</div><h3>تصليح أجهزة ويرلبول المنزلية</h3><p>صيانة شاملة للأجهزة المدمجة والشفاطات المنزلية بمواصفات المصنع الأصلية.</p></article>
         </div>
       </div>
     </section>
 
     <section class="features">
       <div class="container features-grid">
-        <div class="feature"><div class="big">📍</div><b>نقطة جغرافية مثبتة</b><span>عمارات مصر للتعمير بالحي العاشر</span></div>
-        <div class="feature"><div class="big">⚙️</div><b>خدمات مخصصة</b><span>تغطية متكاملة لجميع أجهزة Whirlpool</span></div>
-        <div class="feature"><div class="big">🏙️</div><b>تغطية القاهرة</b><span>خدمة منزلية في مدينة نصر والمناطق المجاورة</span></div>
-        <div class="feature"><div class="big">🗺️</div><b>توجيه خرائط مباشر</b><span>سهولة الوصول للموقع عبر خرائط جوجل الرسمية</span></div>
+        <div class="feature"><div class="big">⚙️</div><b>قطع غيار أصلية</b><span>مطابقة لمواصفات شركة Whirlpool</span></div>
+        <div class="feature"><div class="big">🏠</div><b>زيارات منزلية</b><span>فحص وإصلاح داخل المنزل دون نقل الجهاز</span></div>
+        <div class="feature"><div class="big">🏙️</div><b>القاهرة والجيزة</b><span>تغطية سريعة لجميع المناطق والأحياء</span></div>
+        <div class="feature"><div class="big">🛡️</div><b>ضمان معتمد</b><span>ضمان على القطع المستبدلة والإصلاح</span></div>
+      </div>
+    </section>
+
+    <!-- سيكشن الكول تو أكشن ونموذج الإرسال المباشر -->
+    <section id="booking">
+      <div class="container">
+        <div class="booking-section">
+          <div class="booking-grid">
+            <div>
+              <h2 style="margin:0 0 10px;font-size:30px;">طلب فحص وصيانة منزلية</h2>
+              <p style="margin:0 0 18px;color:#dbe8f5;">سجل بيانات الجهاز وموقعك، وسيتم تحويل الطلب فوراً إلى الفريق الفني لمعاينة الحالة وتحديد الموعد المناسب للزيارة.</p>
+              <ul style="padding-right:20px;line-height:2;color:#e8f1fa;font-size:15px;margin:0;">
+                <li>فحص منزلي دقيق لتشخيص الأعطال.</li>
+                <li>تغطية كافة مناطق القاهرة والجيزة.</li>
+                <li>توفير المكونات والقطع التالفة مباشرة.</li>
+              </ul>
+            </div>
+
+            <div>
+              <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST" style="background:#fff;padding:24px;border-radius:18px;color:#182235;">
+                <!-- إعدادات نموذج الإرسال -->
+                <input type="hidden" name="_subject" value="طلب صيانة ويرلبول جديد عبر الموقع">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <div class="form-group">
+                  <label>الاسم بالكامل</label>
+                  <input type="text" name="الاسم" placeholder="اكتب اسمك الكريم" required>
+                </div>
+
+                <div class="form-group">
+                  <label>رقم الهاتف للتواصل</label>
+                  <input type="tel" name="رقم_الهاتف" placeholder="رقم الهاتف للتنسيق" required>
+                </div>
+
+                <div class="form-group">
+                  <label>نوع الجهاز المطلوب صيانته</label>
+                  <select name="نوع_الجهاز" required>
+                    <option value="غسالة ملابس">غسالة ملابس ويرلبول</option>
+                    <option value="ثلاجة">ثلاجة ويرلبول</option>
+                    <option value="ديب فريزر">ديب فريزر ويرلبول</option>
+                    <option value="مجفف ملابس (دراير)">مجفف ملابس (دراير)</option>
+                    <option value="غسالة أطباق">غسالة أطباق ويرلبول</option>
+                    <option value="فرن أو مسطح">فرن أو مسطح ويرلبول</option>
+                    <option value="ميكروويف">ميكروويف ويرلبول</option>
+                    <option value="جهاز آخر">أجهزة منزلية أخرى</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>المنطقة أو الحي (القاهرة / الجيزة)</label>
+                  <input type="text" name="المنطقة_والعنوان" placeholder="مثال: مدينة نصر، المعادي، الدقي، أكتوبر..." required>
+                </div>
+
+                <div class="form-group">
+                  <label>وصف مختصر للمشكلة أو العطل</label>
+                  <textarea name="وصف_العطل" placeholder="مثال: الغسالة لا تطرد المياه، الثلاجة لا تبرد جيدا..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">إرسال طلب الصيانة الفوري</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -292,20 +328,19 @@
       <div class="container">
         <div class="section-head">
           <h2>الموقع المعتمد والخريطة</h2>
-          <p>بيانات الكيان الجغرافي المسجلة رسميًا على الخريطة.</p>
+          <p>بيانات النشاط الميداني المسجلة على الخريطة.</p>
         </div>
 
         <div class="location-grid">
           <div class="panel">
-            <h2>بيانات النشاط الميداني</h2>
+            <h2>بيانات النشاط</h2>
             <div class="nap">
               <div class="nap-item"><small>النشاط التجاري</small><strong>مركز صيانة ويرلبول Whirlpool</strong></div>
               <div class="nap-item"><small>العنوان المعتمد</small><strong>عمارات مصر للتعمير، مساكن النادي الأهلي، الحي العاشر، مدينة نصر، محافظة القاهرة 4442620</strong></div>
-              <div class="nap-item"><small>التصنيف الرئيسي</small><strong>Appliance repair service (خدمة تصليح أجهزة منزلية)</strong></div>
-              <div class="nap-item"><small>معرف الخريطة (CID)</small><strong>5309320649832261195</strong></div>
+              <div class="nap-item"><small>التصنيف</small><strong>تصليح أجهزة منزلية</strong></div>
             </div>
-            <div style="margin-top:16px;">
-              <a class="btn btn-primary" style="width:100%;" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ الانتقال للخريطة وطلب الاتجاهات</a>
+            <div style="margin-top:18px;">
+              <a class="btn btn-primary" style="width:100%;" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ فتح الخريطة وطلب الاتجاهات</a>
             </div>
           </div>
 
@@ -315,7 +350,7 @@
               allowfullscreen
               loading="lazy"
               referrerpolicy="strict-origin-when-cross-origin"
-              title="خريطة مركز صيانة ويرلبول مدينة نصر">
+              title="خريطة مركز صيانة ويرلبول">
             </iframe>
           </div>
         </div>
@@ -325,18 +360,18 @@
     <section id="areas">
       <div class="container">
         <div class="section-head">
-          <h2>نطاق التغطية والخدمة</h2>
-          <p>المناطق والمحاور المغطاة بمحيط موقع النشاط في القاهرة.</p>
+          <h2>نطاق تغطية الزيارات المنزلية</h2>
+          <p>نصل إليك في أسرع وقت بجميع قطاعات القاهرة والجيزة.</p>
         </div>
         <div class="areas">
-          <div class="area">مدينة نصر</div>
-          <div class="area">الحي العاشر</div>
-          <div class="area">مساكن النادي الأهلي</div>
-          <div class="area">مصر الجديدة</div>
-          <div class="area">التجمع الأول والخامس</div>
-          <div class="area">القاهرة الجديدة</div>
-          <div class="area">المقطم والزهراء</div>
-          <div class="area">محافظة القاهرة</div>
+          <div class="area">مدينة نصر والتجمع</div>
+          <div class="area">مصر الجديدة والنزهة</div>
+          <div class="area">المعادي والمقطم</div>
+          <div class="area">الدقي والمهندسين</div>
+          <div class="area">الهرم وفيصل</div>
+          <div class="area">6 أكتوبر والشيخ زايد</div>
+          <div class="area">شبرا ووسط البلد</div>
+          <div class="area">كافة أحياء الجيزة والقاهرة</div>
         </div>
       </div>
     </section>
@@ -345,24 +380,16 @@
       <div class="container">
         <div class="section-head">
           <h2>الأسئلة الشائعة</h2>
-          <p>معلومات فنية وتوضيحية حول خدمات صيانة ويرلبول.</p>
+          <p>إجابات واضحة لأكثر الاستفسارات شيوعاً حول خدمة صيانة أجهزة ويرلبول.</p>
         </div>
         <div class="faq">
-          <details><summary>ما هي الأجهزة المشمولة في خدمات ويرلبول؟</summary><p>تشمل الخدمات فحص وصيانة غسالات الملابس، الثلاجات، الديب فريزر، مجففات الملابس (الدراير)، غسالات الأطباق، والأفران المدمجة من ويرلبول.</p></details>
-          <details><summary>أين يقع المقر المحدد على الخريطة؟</summary><p>الموقع مسجل بعمارات مصر للتعمير، مساكن النادي الأهلي، الحي العاشر بمدينة نصر، ويمكن فتح الخريطة مباشرة عبر الرابط المخصص.</p></details>
-          <details><summary>هل يدعم هذا الموقع أرشفة الخريطة على محركات البحث؟</summary><p>نعم، تم إعداد الصفحة ببيانات Schema دقيقة ترتبط بمعرف الخريطة الرسمي (CID) مع كود خريطة جوجل التفاعلي لتعزيز التواجد الموضعي.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="cta">
-          <div>
-            <h2>استكشف الموقع عبر خرائط جوجل</h2>
-            <p>انقر لفتح الإحداثيات الرسمية وتحديد أفضل مسار إلى المركز.</p>
-          </div>
-          <a class="btn" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">📍 فتح الخريطة الآن</a>
+          <details><summary>هل تتم أعمال الصيانة داخل المنزل أم يتطلب نقل الجهاز؟</summary><p>تتم أعمال الفحص والإصلاح بنسبة 95% داخل المنزل لتفادي أي أضرار ناجمة عن النقل، ولا يتم سحب الجهاز إلا في حالات الأعطال المعقدة التي تتطلب أجهزة اختبار معملية خاصة.</p></details>
+          <details><summary>ما هي الأجهزة المشمولة في خدمات ويرلبول؟</summary><p>تشمل الخدمات فحص وتصليح غسالات الملابس، الثلاجات، الديب فريزر، مجففات الملابس (الدراير)، غسالات الأطباق، والأفران والمسطحات المدمجة.</p></details>
+          <details><summary>هل يحصل العميل على ضمان بعد إتمام الصيانة؟</summary><p>نعم، يتم تقديم ضمان مكتوب على الأجزاء وقطع الغيار التي تم استبدالها وعلى عملية الإصلاح لضمان استقرار الجهاز وكفاءة تشغيله.</p></details>
+          <details><summary>ما هي المدة المتوقعة لوصول الفني بعد إرسال الطلب؟</summary><p>يتم التواصل لتأكيد الموعد فور مراجعة بيانات الطلب، وتتم الزيارة الميدانية في أغلب الأوقات خلال 24 إلى 48 ساعة كحد أقصى حسب منطقتك الجغرافية.</p></details>
+          <details><summary>هل تتوفر قطع غيار مطابقة للموديلات الأمريكية القديمة والحديثة؟</summary><p>نعم، نحرص على توفير القطع الميكانيكية والإلكترونية المناسبة لموديلات ويرلبول المختلفة لضمان التوافق التام وطول العمر الافتراضي للجهاز.</p></details>
+          <details><summary>كيف يتم احتساب تكلفة الفحص والزيارة المنزلية؟</summary><p>يتم فحص الجهاز وتشخيص العطل أولاً، ثم إبلاغ العميل بتقرير الصيانة وتكلفة قطع الغيار قبل البدء بأي خطوة فعلية في التصليح.</p></details>
+          <details><summary>أين يقع مقر النشاط المحدد على الخريطة؟</summary><p>الموقع مسجل بعمارات مصر للتعمير، مساكن النادي الأهلي، الحي العاشر بمدينة نصر، ويمكن الوصول للموقع وطلب الاتجاهات عبر الرابط المخصص.</p></details>
         </div>
       </div>
     </section>
@@ -370,8 +397,8 @@
 
   <footer>
     <div class="container">
-      <span>مركز صيانة أجهزة ويرلبول Whirlpool - مدينة نصر، القاهرة</span>
-      <span>معرف الخريطة المعتمد: CID 5309320649832261195</span>
+      <span>مركز صيانة أجهزة ويرلبول Whirlpool - خدمات القاهرة والجيزة</span>
+      <a href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener" style="color:#d8e3ef;">عرض الموقع على خريطة جوجل</a>
     </div>
   </footer>
 
