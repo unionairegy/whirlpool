@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مركز صيانة ويرلبول Whirlpool | القاهرة والجيزة</title>
-  <meta name="description" content="خدمات تصليح أجهزة ويرلبول Whirlpool في القاهرة والجيزة: غسالات، ثلاجات، ديب فريزر، مجففات، غسالات أطباق. اطلب زيارة وفحص فني منزلي فوري.">
+  <meta name="description" content="خدمات تصليح أجهزة ويرلبول Whirlpool في القاهرة والجيزة: غسالات، ثلاجات، ديب فريزر، مجففات، غسالات أطباق مع فحص فني منزلي مباشر وموقعنا على الخريطة.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#082844">
 
@@ -84,7 +84,7 @@
     .feature b{display:block;margin-top:7px;font-size:17px}
     .feature span{color:#d5dfeb;font-size:14px}
 
-    /* سيكشن الحجز الجديد والفورم المبتكرة والبارزة */
+    /* سيكشن الحجز والفورم المصممة للإرسال النظيف */
     .cta-wrapper{
       position:relative;
       background:radial-gradient(circle at 10% 20%, #153c66 0%, #082844 80%);
@@ -186,7 +186,7 @@
     }
   </style>
 
-  <!-- LocalBusiness Schema المربوط بـ CID الخريطة الجديد -->
+  <!-- سكيما الكيان المربوط بـ CID الخريطة وإحداثيات الموقع الرسمي -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -251,7 +251,6 @@
         <a href="#location">الموقع والاتجاهات</a>
         <a href="#areas">مناطق التغطية</a>
         <a href="#faq">الأسئلة الشائعة</a>
-        <!-- ربط زر الهيدر بالفورم مباشرة -->
         <a class="nav-btn" href="#booking-form">حجز موعد فحص</a>
       </nav>
     </div>
@@ -265,7 +264,6 @@
           <h1>مركز صيانة ويرلبول Whirlpool</h1>
           <p class="lead">خدمة منزلية متخصصة لفحص وتصليح كافة موديلات أجهزة ويرلبول الحديثة والقديمة في جميع أحياء القاهرة والجيزة مع دعم فني ميداني سريع.</p>
           <div class="hero-actions">
-            <!-- ربط زر الهيرو الأساسي بالفورم مباشرة -->
             <a class="btn btn-gold" href="#booking-form">📝 طلب زيارة وفحص فني</a>
             <a class="btn btn-outline" href="https://maps.google.com/?cid=5309320649832261195" target="_blank" rel="noopener">🗺️ الاتجاهات على الخريطة</a>
           </div>
@@ -316,7 +314,7 @@
       </div>
     </section>
 
-    <!-- سيكشن الكول تو أكشن والفورم الجديد بالكامل -->
+    <!-- سيكشن الحجز والفورم المصممة للإرسال النظيف -->
     <section id="booking-form">
       <div class="container">
         <div class="cta-wrapper">
@@ -333,33 +331,33 @@
               </ul>
             </div>
 
-            <!-- بطاقة الفورم بتصميم ملفت وبارز -->
             <div class="form-card">
               <div class="form-head">
                 <h3>طلب صيانة منزلية فورية</h3>
                 <span>طريقة التواصل والحجز المباشرة مع الفريق الفني</span>
               </div>
 
-              <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="طلب صيانة ويرلبول جديد عبر الموقع">
+              <!-- فورم الإرسال المصححة برمجياً لمنع كود 500 -->
+              <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST" accept-charset="UTF-8">
+                <input type="hidden" name="_subject" value="طلب صيانة ويرلبول جديد">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
 
                 <div class="form-row">
                   <div class="form-group">
                     <label>الاسم بالكامل</label>
-                    <input type="text" name="الاسم" placeholder="اكتب اسم العميل" required>
+                    <input type="text" name="name" placeholder="اكتب اسم العميل" required>
                   </div>
 
                   <div class="form-group">
                     <label>رقم الهاتف للتواصل</label>
-                    <input type="tel" name="رقم_الهاتف" placeholder="رقم الموبايل للمتابعة" required>
+                    <input type="tel" name="phone" placeholder="رقم الموبايل للمتابعة" required>
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label>نوع الجهاز المطلوب صيانته</label>
-                  <select name="نوع_الجهاز" required>
+                  <select name="appliance" required>
                     <option value="" disabled selected>اختر نوع جهاز ويرلبول</option>
                     <option value="غسالة ملابس">غسالة ملابس ويرلبول</option>
                     <option value="ثلاجة">ثلاجة ويرلبول</option>
@@ -374,12 +372,12 @@
 
                 <div class="form-group">
                   <label>وصف المشكلة أو العطل</label>
-                  <textarea name="وصف_العطل" placeholder="اكتب تفاصيل العطل (مثل: ضعف تبريد، تسريب مياه، صوت عالي...)" required></textarea>
+                  <textarea name="problem_details" placeholder="اكتب تفاصيل العطل (مثل: ضعف تبريد، تسريب مياه، صوت عالي...)" required></textarea>
                 </div>
 
                 <div class="form-group">
                   <label>المنطقة أو الحي بالتفصيل</label>
-                  <input type="text" name="المنطقة_والحي" placeholder="مثال: مدينة نصر (مكرم عبيد)، الهرم، 6 أكتوبر..." required>
+                  <input type="text" name="location" placeholder="مثال: مدينة نصر (مكرم عبيد)، الهرم، 6 أكتوبر..." required>
                 </div>
 
                 <button type="submit" class="btn-submit-booking">تأكيد وإرسال طلب الفحص المنزلي</button>
@@ -423,7 +421,7 @@
       </div>
     </section>
 
-    <!-- توسيع مناطق مدينة نصر والجيزة والقاهرة بالكامل -->
+    <!-- تغطية كاملة لأحياء مدينة نصر والقاهرة والجيزة -->
     <section id="areas">
       <div class="container">
         <div class="section-head">
@@ -431,7 +429,6 @@
           <p>نصل إليك في جميع قطاعات وأحياء القاهرة والجيزة في أسرع وقت.</p>
         </div>
         <div class="areas-grid">
-          <!-- تفاصيل أحياء مدينة نصر -->
           <div class="area-badge">مدينة نصر (الحي العاشر)</div>
           <div class="area-badge">شارع مكرم عبيد</div>
           <div class="area-badge">شارع عباس العقاد</div>
@@ -440,7 +437,6 @@
           <div class="area-badge">زهراء مدينة نصر</div>
           <div class="area-badge">مساكن النادي الأهلي</div>
           <div class="area-badge">الحي الثامن والتاسع</div>
-          <!-- أحياء القاهرة والجيزة الممتدة -->
           <div class="area-badge">مصر الجديدة والنزهة</div>
           <div class="area-badge">التجمع والقاهرة الجديدة</div>
           <div class="area-badge">المعادي وزهراء المعادي</div>
